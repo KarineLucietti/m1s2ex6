@@ -1,12 +1,15 @@
-let contador = 0;
-const limite = 10;
-let numero = prompt("Digite um número");
-let resultado = numero * contador;
+const number = parseInt(prompt("Digite um número inteiro entre 1 - 10: "));
 
-do{
-    resultado = numero * contador;
-    console.log(numero+" x "+contador+ " = "+resultado);
-    contador++
-}  while (contador<=limite)
+if (number > 0 && number <= 10) {
+
+       console.log("Tabuada do " + number + ":");
+       for (i = 1; i <= 10; i++) {
+              let calcule = number * i;
+              console.log(number + " x " + i + " = " + calcule)
+       };
+
+} else {
+       console.log("Número não permitido!!");
+}
 
 
